@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Paris</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, bisque, beige);
+        }
+
+        header {
+            background: rgb(242, 160, 8);
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .intro img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            flex-basis: 48%;
+        }
+
+        .intro-text {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro-text h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .intro-text p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .attraction-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .attraction-card:hover {
+            transform: scale(1.05);
+        }
+
+        .attraction-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .attraction-card h3 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .attraction-card p {
+            color: #777;
+            font-size: 1rem;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: grey;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro img {
+                width: 80%;
+            }
+
+            .intro-text {
+                text-align: center;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .attractions {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Discover the Beauty of Paris</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <img src="p1.jpg" alt="Paris Landmark">
+            <div class="intro-text">
+                <h2>Welcome to Paris</h2>
+                <p>Paris, the city of love and lights, offers something for every traveler. Whether you're a fan of art, history, culture, or food, Paris will captivate your heart and mind. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo perspiciatis blanditiis velit, vel unde autem dignissimos dolor laborum ipsam, voluptate nemo ea sed, doloremque veniam nesciunt qui eius quia numquam!</p>
+                <p>Explore the rich history, iconic landmarks, and indulge in delicious French cuisine. Your adventure awaits in the heart of Europe.</p>
+            </div>
+        </section>
+
+        <section class="attractions">
+            <div class="attraction-card">
+                <img src="p2.jpg" alt="Eiffel Tower">
+                <h3>Eiffel Tower</h3>
+                <p>One of the most recognizable landmarks in the world, the Eiffel Tower offers stunning views of Paris from its observation decks.</p>
+            </div>
+            <div class="attraction-card">
+                <img src="p8.jpg" alt="Eiffel Tower">
+                <h3>The Basilique du Sacré-Coeur de Montmartre</h3>
+                <p>The Montmartre basilica boasts an all-white façade, Romano-Byzantine design, and mosaic ceiling unlike any other religious structure in Paris.</p>
+            </div>
+            <div class="attraction-card">
+                <img src="p3.jpeg" alt="Louvre Museum">
+                <h3>Louvre Museum</h3>
+                <p>The Louvre is the world's largest and most visited art museum, home to masterpieces like the Mona Lisa and the Venus de Milo.</p>
+            </div>
+            <div class="attraction-card">
+                <img src="p4.jpg" alt="Notre Dame Cathedral">
+                <h3>Notre Dame Cathedral</h3>
+                <p>A masterpiece of Gothic architecture, the Notre Dame Cathedral is an iconic religious landmark with breathtaking stained glass windows.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <img src="p5.jpg" alt="Paris Street View">
+                <img src="p6.jpg" alt="Paris Night">
+                <img src="p7.jpeg" alt="Seine River">
+                <img src="p3.jpg" alt="Paris Architecture">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Discover Paris</p>
+    </footer>
+
+</body>
+</html>
